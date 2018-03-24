@@ -1,0 +1,106 @@
+.page.phone-rates {
+	.btn {
+		background-color: $blurple;
+		color: white;
+		border: none;
+		outline: none;
+		box-shadow: none;
+	}
+	.btn.active, .btn:hover, .btn:focus, .btn:active {
+		background-color: $blurpleDark;
+	}
+
+	.input-group {
+		width: 30%;
+		margin-top: 25px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.number-lookup {
+		@extend .d-inline-flex;
+		@extend .flex-column;
+		@extend .align-items-center;
+
+		margin-top: 25px;
+		margin-left: auto;
+		margin-right: auto;
+		background-color: rgb(41, 43, 47);
+		border: 1px solid rgb(47, 50, 55);
+		border-radius: 5px;
+
+		.number {
+			@extend .p-2;
+			@extend .d-flex;
+			@extend .flex-row;
+			@extend .align-items-center;
+
+			.flag64 {
+				@extend .p-2;
+
+				margin-right: 5px;
+			}
+
+			.info {
+				@extend .p-2;
+				@extend .d-flex;
+				@extend .flex-column;
+
+				margin-left: 5px;
+
+				.head {
+					font-size: 2vmin;
+				}
+			}
+		}
+
+		.rates {
+			@extend .p-2;
+			@extend .d-flex;
+			@extend .flex-column;
+			@extend .align-items-center;
+		}
+	}
+
+	.rates {
+		@extend .d-flex;
+		@extend .flex-column;
+
+		margin-top: 25px;
+
+		.rate {
+			@extend .p-2;
+			@extend .d-flex;
+			@extend .flex-row;
+			@extend .align-items-center;
+
+			width: 65%;
+			margin-left: auto;
+			margin-right: auto;
+			border-bottom: 1px solid rgb(79, 84, 92);
+
+			.flag64 {
+				@extend .p-2;
+
+				margin-left: 5px;
+				margin-right: 5px;
+			}
+
+			.info {
+				@extend .p-2;
+				@extend .d-flex;
+				@extend .flex-column;
+
+				.head {
+					font-size: 2vmin;
+				}
+			}
+
+			.price {
+				@extend .p-2;
+				@extend .ml-auto;
+				@extend .text-center;
+			}
+		}
+	}
+}

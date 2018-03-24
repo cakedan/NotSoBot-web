@@ -1,0 +1,39 @@
+@import './variables';
+
+@import './animation';
+@import './flags';
+@import './components/all';
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+body {
+	background-color: rgb(54, 57, 62);
+	color: white;
+}
+
+html, body, #app {
+	height: 100%;
+	max-width: 100%;
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+}
+::-webkit-scrollbar-track
+{
+	background-color: rgb(47, 49, 54);
+	border-radius: 6px;
+	background-clip: padding-box;
+	border: 2px solid rgb(54, 57, 62);
+}
+::-webkit-scrollbar-thumb
+{
+	background-color: rgb(30, 33, 36);
+	border-radius: 6px;
+	background-clip: padding-box;
+	border: 2px solid rgb(54, 57, 64);
+}
+::-webkit-scrollbar-thumb:hover
+{
+	background-color: rgb(33, 36, 39);
+}

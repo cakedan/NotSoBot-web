@@ -1,0 +1,33 @@
+{
+  "name": "notsobot-web",
+  "version": "0.0.1",
+  "description": "NotSoPhone's Panel, using Mithril JS.",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "css-loader": "^0.28.11",
+    "jquery": "^3.3.1",
+    "mini-css-extract-plugin": "^0.2.0",
+    "mithril": "^1.1.6",
+    "node-sass": "^4.7.2",
+    "popper.js": "^1.14.1",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.3",
+    "webpack": "^4.2.0",
+    "webpack-cli": "^2.0.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cakedan/NotSoPhone-panel-Mithril.git"
+  },
+  "author": "cakedan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cakedan/NotSoPhone-panel-Mithril/issues"
+  },
+  "homepage": "https://github.com/cakedan/NotSoPhone-panel-Mithril#readme"
+}

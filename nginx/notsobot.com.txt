@@ -1,0 +1,40 @@
+server {
+	listen 443 ssl;
+	server_name www.notsobot.com notsobot.com;
+	charset utf8mb4;
+	client_max_body_size 8M;
+	ssl_certificate /var/www/notsobot.com/cert/cert.cert;
+	ssl_certificate_key /var/www/notsobot.com/cert/cert.key;
+	
+	root /var/www/notsobot.com/mithril/src/public;
+
+	location /
+	{
+		index index.html;
+		rewrite (.*)$ /index.html break;
+	}
+
+	location /assets {}
+	location /build {}
+
+	location /invite
+	{
+		return 301 https://notsobot.com/api/bot/discord/invite;
+	}
+
+	location /discord
+	{
+		return 301 https://notsobot.com/api/bot/discord/support;
+	}
+
+	location /api
+	{
+		proxy_set_header Host $host;
+		proxy_set_header X-Real-IP $remote_addr;
+		proxy_set_header X-Forwarded-For $remote_addr;
+		proxy_set_header X-Forwarded-Host $remote_addr;
+		proxy_pass http://127.0.0.1:3829;
+	}
+
+	error_page 400 401 402 403 404 405 406 407 408 409 410 411 412 413 414 415 416 417 418 420 422 423 424 426 428 429 431 444 449 450 451 500 501 502 503 504 505 506 507 508 509 510 511 /error/xxx;
+}
