@@ -15,9 +15,9 @@ class CustomPage extends Page
 	view()
 	{
 		return m('div', {class: 'head text-center'}, [
-			m('img', {src: '/assets/img/logo.png'}),
-			m('h1', 'Make phone calls on Discord!'),
-			m('span', {class: 'small-text'}, 'NotSoFoundation?'),
+			m('img', {src: '/assets/img/logo.png', style: 'height: 128px; width: 128px;'}),
+			m('h1', 'oof'),
+			m('span', {class: 'small-text'}, 'coolest bot on discord'),
 			m('div', {class: 'btn-group'}, [
 				m('a', {href: '/invite', class: 'btn'}, 'Invite'),
 				m('a', {href: '/discord', class: 'btn'}, 'Discord')
