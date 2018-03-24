@@ -20,12 +20,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cakedan/NotSoPhone-panel-Mithril.git"
+    "url": "git+https://github.com/cakedan/NotSoBot-web.git"
   },
   "author": "cakedan",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cakedan/NotSoPhone-panel-Mithril/issues"
+    "url": "https://github.com/cakedan/NotSoBot-web/issues"
   },
-  "homepage": "https://github.com/cakedan/NotSoPhone-panel-Mithril#readme"
+  "homepage": "https://github.com/cakedan/NotSoBot-web#readme"
 }
