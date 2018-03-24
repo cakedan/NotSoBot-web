@@ -2,13 +2,13 @@ const m = require('mithril');
 
 const nav = [
 	{position: 'left', path: '/commands', name: 'Commands'},
-	{position: 'left', path: '/phone', name: 'Phone', icon: 'phone'},
-	{position: 'left', path: '/tos', name: 'Terms of Service', icon: 'check-circle'},
+	//{position: 'left', path: '/phone', name: 'Phone', icon: 'phone'},
+	//{position: 'left', path: '/tos', name: 'Terms of Service', icon: 'check-circle'},
 	{position: 'left', path: '/invite', name: 'Invite', link: true},
 	{position: 'left', path: '/discord', name: 'Discord', link: true},
-	{position: 'right', path: '/panel', name: 'Panel', authed: true},
-	{position: 'right', path: '/auth/login', name: 'Login', authed: false},
-	{position: 'right', path: '/auth/logout', name: 'Logout', authed: true}
+	//{position: 'right', path: '/panel', name: 'Panel', authed: true},
+	//{position: 'right', path: '/auth/login', name: 'Login', authed: false},
+	//{position: 'right', path: '/auth/logout', name: 'Logout', authed: true}
 ];
 
 class Navbar

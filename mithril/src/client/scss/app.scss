@@ -1,11 +1,11 @@
 @import './variables';
 
-@import './animation';
 @import './flags';
-@import './components/all';
+@import './components';
 @import 'node_modules/bootstrap/scss/bootstrap';
 
 body {
+	font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
 	background-color: rgb(54, 57, 62);
 	color: white;
 }
@@ -22,15 +22,15 @@ html, body, #app {
 ::-webkit-scrollbar-track
 {
 	background-color: rgb(47, 49, 54);
-	border-radius: 6px;
 	background-clip: padding-box;
+	border-radius: 6px;
 	border: 2px solid rgb(54, 57, 62);
 }
 ::-webkit-scrollbar-thumb
 {
 	background-color: rgb(30, 33, 36);
-	border-radius: 6px;
 	background-clip: padding-box;
+	border-radius: 6px;
 	border: 2px solid rgb(54, 57, 64);
 }
 ::-webkit-scrollbar-thumb:hover
