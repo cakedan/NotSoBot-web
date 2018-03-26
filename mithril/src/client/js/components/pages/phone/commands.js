@@ -1,6 +1,6 @@
 const m = require('mithril');
 
-const Page = require('../page');
+const Page = require('../../page');
 
 class CustomPage extends Page
 {

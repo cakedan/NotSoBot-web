@@ -1,13 +1,21 @@
-module.exports = [
-	require('./error.code'),
+const pages = [];
+
+const forEachPage = (page) => {
+	if (Array.isArray(page)) {
+		page.forEach(forEachPage);
+	} else {
+		pages.push(page);
+	}
+};
+
+forEachPage([
+	require('./error'),
 	require('./home'),
 	require('./commands'),
-	//require('./phone'),
-	//require('./phone.commands'),
-	//require('./phone.rates'),
-	//require('./tos'),
-	//require('./panel'),
-	//require('./auth.login'),
-	//require('./auth.logout'),
-	//require('./auth.callback')
-];
+	require('./phone'),
+	require('./tos'),
+	require('./panel'),
+	require('./auth')
+]);
+
+module.exports = pages;

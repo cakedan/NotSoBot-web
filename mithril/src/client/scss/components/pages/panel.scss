@@ -1,0 +1,223 @@
+.page.panel {
+	@extend .container;
+
+	margin: 0 0 0 0;
+
+	.navbar-custom {
+		color: white;
+		background-color: transparent;
+		border-bottom: 1px solid rgb(62, 65, 70);
+	}
+
+	.panel-products {
+		@extend .d-flex;
+		@extend .flex-column;
+		@extend .align-items-center;
+
+		margin: 25px 0;
+
+		.btn {
+			@extend .p-2;
+			background-color: rgb(32, 34, 37);
+			color: white;
+			border: none;
+			outline: none;
+			box-shadow: none;
+		}
+		.btn.active, .btn:hover, .btn:focus, .btn:active {
+			background-color: $blurpleDark;
+		}
+
+		.head {
+			@extend .d-flex;
+			@extend .flex-column;
+			@extend .align-items-center;
+
+			span {
+				color: rgb(199, 204, 209);
+			}
+		}
+
+		.gateways {
+			@extend .d-flex;
+			@extend .flex-row;
+
+			padding: 0 0 25px 0;
+			margin: 25px 0;
+			border-bottom: 1px solid rgb(62, 65, 70);
+
+			.gateway {
+				@extend .d-flex;
+				@extend .flex-row;
+
+				margin: 0 10px;
+
+				i {
+					height: 2vmin;
+					width: 2vmin;
+					background-repeat: no-repeat;
+					background-position: center;
+					background-size: cover;
+					margin: 0 0.5vmin 0 0;
+				}
+
+				i.paypal {
+					background-image: url('/assets/img/paypal.png');
+				}
+
+				i.bitcoin {
+					background-image: url('/assets/img/bitcoin.png');
+				}
+
+				i.ethereum {
+					background-image: url('/assets/img/ethereum.png');
+				}
+
+				i.litecoin {
+					background-image: url('/assets/img/litecoin.svg');
+				}
+
+				i.bitcoin-cash {
+					background-image: url('/assets/img/bitcoin-cash.svg');
+				}
+			}
+		}
+
+		.purchase-types {
+			@extend .btn-group;
+
+			padding: 0 0 25px 0;
+			margin: 25px 0;
+		}
+
+		.products {
+			@extend .d-flex;
+			@extend .flex-row;
+			@extend .flex-wrap;
+
+			margin: 0 0 25px 0;
+
+			.custom-product {
+				@extend .d-flex;
+				@extend .flex-column;
+				@extend .align-items-center;
+
+				.amount {
+
+					margin: 0 0 25px 0;
+
+					transition: border-bottom .15s;
+					border-bottom: 2px solid rgb(156, 190, 187);
+
+					.icon {
+						font-size: 5vmin;
+						color: rgb(199, 204, 209);
+					}
+					input {
+						text-align: center;
+						background-color: transparent;
+						border: none;
+						outline: none;
+						font-size: 5vmin;
+						color: white;
+					}
+				}
+				.amount:focus-within, .amount:active {
+					transition: border-bottom .15s;
+					border-bottom: 2px solid rgb(67, 181, 129);
+				}
+				.amount.error, .amount.error:focus-within, .amount.error:active {
+					transition: border-bottom .15s;
+					border-bottom: 2px solid rgb(240, 71, 71);
+				}
+
+				.info {
+					@extend .d-flex;
+					@extend .flex-column;
+					@extend .align-items-center;
+
+					font-size: 2vmin;
+					color: rgb(199, 204, 209);
+				}
+			}
+
+			.product {
+				@extend .d-flex;
+				@extend .flex-column;
+				@extend .align-items-center;
+
+				cursor: pointer;
+				transition: box-shadow .15s, background-color .15s;
+				box-shadow: 0 9px 30px rgba(6, 6, 7, 0.3);
+				box-sizing: border-box;
+
+				margin: auto;
+				margin-bottom: 15px;
+				width: 300px;
+				background-color: rgb(32, 34, 37);
+				border-radius: 5px;
+
+				.credits {
+					@extend .d-flex;
+					@extend .flex-column;
+					@extend .align-items-center;
+
+					width: 100%;
+					height: 105px;
+					border-radius: 5px 5px 0 0;
+
+					.total {
+						@extend .text-center;
+
+						transition: color .15s;
+						color: rgb(67, 181, 129);
+						font-style: bold;
+						font-size: 4vmin;
+						padding-top: 15px;
+					}
+
+					.extra {
+						@extend .text-center;
+
+						color: rgb(199, 204, 209);
+						height: 25px;
+						width: 100%;
+					}
+				}
+
+				.price {
+					@extend .d-flex;
+					@extend .flex-column;
+					@extend .align-items-center;
+
+					border-radius: 0 0 5px 5px;
+					padding: 15px 0;
+				}
+			}
+
+			.product.active, .product:hover, .product:focus, .product:active {
+				transition: box-shadow .15s, background-color .15s;
+				background-color: $blurpleDark;
+				box-shadow: 0 9px 30px rgba(6, 6, 7, 0.7);
+
+				.credits {
+					.total {
+						transition: color .15s;
+						color: rgb(117, 231, 179);
+					}
+				}
+			}
+		}
+
+		.purchase {
+			background-color: rgb(67, 181, 129);
+			font-size: 3vmin;
+		}
+		.purchase.disabled, .purchase.disabled:hover, .purchase.disabled:focus, .purchase.disabled:active {
+			background-color: rgb(240, 71, 71);
+		}
+		.purchase:hover, .purchase:focus, .purchase:active {
+			background-color: rgb(87, 201, 149);
+		}
+	}
+}

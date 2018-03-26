@@ -1,19 +1,19 @@
 const m = require('mithril');
 
-const Page = require('../page');
+const Page = require('../../page');
 
 class CustomPage extends Page
 {
 	constructor(app)
 	{
 		super(app, {
-			path: '/auth/logout'
+			path: '/error/:code:'
 		});
 	}
 
 	view()
 	{
-		return [m('p', m.route.get())];
+		return [m('p', m.route.get()), m('p', m.route.param('code'))];
 	}
 }
 

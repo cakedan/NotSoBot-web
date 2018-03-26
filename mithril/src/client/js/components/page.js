@@ -45,7 +45,7 @@ class Page
 
 	render(vnode)
 	{
-		return [m(this.app.navbar), m('div', {class: this.class}, vnode)];
+		return [m(this.app.navbar), m(this.app.accountbar), m('div', {class: this.class}, vnode)];
 	}
 }
 

@@ -28,7 +28,6 @@ class CustomPage extends Page
 					});
 				}).then((r) => r.text()).then((body) => {
 					this.app.cache.set('notsobot.commands', body);
-					console.log('done');
 				}).then(resolve).catch(reject);
 			}
 		});

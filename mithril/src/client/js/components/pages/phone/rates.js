@@ -1,7 +1,7 @@
 const m = require('mithril');
 
-const Page = require('../page');
-const Utils = require('../../utils');
+const Page = require('../../page');
+const Utils = require('../../../utils');
 
 class CustomPage extends Page
 {
@@ -54,7 +54,7 @@ class CustomPage extends Page
 			if (this.app.cache.has(key)) {
 				resolve(this.app.cache.get(key));
 			} else {
-				m.request({
+				this.app.rest.request({
 					method: 'get',
 					url: `/api/phone/rates/${this.lookup.number}`
 				}).then((lookup) => {
@@ -77,7 +77,7 @@ class CustomPage extends Page
 			if (this.app.cache.has('countries')) {
 				resolve(this.app.cache.get('countries'));
 			} else {
-				m.request({
+				this.app.rest.request({
 					method: 'get',
 					url: '/api/phone/countries'
 				}).then((countries) => {
@@ -89,7 +89,7 @@ class CustomPage extends Page
 			if (this.app.cache.has('rates')) {
 				return Promise.resolve();
 			} else {
-				return m.request({
+				return this.app.rest.request({
 					method: 'get',
 					url: '/api/phone/rates'
 				}).then((rates) => {

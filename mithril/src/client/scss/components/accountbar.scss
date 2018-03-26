@@ -1,0 +1,62 @@
+.account-bar {
+	@extend .d-flex;
+	@extend .flex-row;
+	@extend .align-items-center;
+
+	float: right;
+	background-color: rgb(47, 49, 54);
+	padding: 1.5vmin 2vmin;
+
+	.info {
+		@extend .d-flex;
+		@extend .flex-row;
+		@extend .align-items-center;
+
+		.avatar {
+			height: 5vmin;
+			width: 5vmin;
+			border-radius: 50%;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+		}
+
+		.identifier {
+			@extend .d-flex;
+			@extend .flex-column;
+			@extend .align-items-center;
+
+			margin: 0 0 0 0.5vmin;
+
+			.username {
+				color: white;
+				font-size: 2vmin;
+			}
+			.discriminator {
+				color: rgb(125, 114, 118);
+				font-size: 1.8vmin;
+			}
+		}
+	}
+
+	.credits {
+		@extend .d-flex;
+		@extend .flex-row;
+		@extend .align-items-center;
+		
+		margin: 0 0 0 2vmin;
+
+		i {
+			height: 1.5vmin;
+			width: 1.5vmin;
+			background-image: url('/assets/img/credits.png');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		span {
+			padding: 0 0 0 0.5vmin;
+			font-size: 1.8vmin;
+		}
+	}
+}

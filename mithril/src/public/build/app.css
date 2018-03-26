@@ -2218,6 +2218,38 @@
 .flag128.flag-ZW {
   background-position: -384px -1920px; }
 
+.account-bar {
+  float: right;
+  background-color: #2f3136;
+  padding: 1.5vmin 2vmin; }
+  .account-bar .info .avatar {
+    height: 5vmin;
+    width: 5vmin;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+  .account-bar .info .identifier {
+    margin: 0 0 0 0.5vmin; }
+    .account-bar .info .identifier .username {
+      color: white;
+      font-size: 2vmin; }
+    .account-bar .info .identifier .discriminator {
+      color: #7d7276;
+      font-size: 1.8vmin; }
+  .account-bar .credits {
+    margin: 0 0 0 2vmin; }
+    .account-bar .credits i {
+      height: 1.5vmin;
+      width: 1.5vmin;
+      background-image: url("/assets/img/credits.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover; }
+    .account-bar .credits span {
+      padding: 0 0 0 0.5vmin;
+      font-size: 1.8vmin; }
+
 .navbar {
   background-color: #2f3136; }
 
@@ -2230,31 +2262,151 @@
 .page {
   margin: 25px 0 25px 0; }
 
+.page.auth-login .head {
+  margin: 10vmin 0 0 0; }
+  .page.auth-login .head .btn {
+    background-color: #7289da;
+    color: white;
+    border: none;
+    outline: none;
+    box-shadow: none; }
+    .page.auth-login .head .btn .logo {
+      display: inline-block;
+      height: 10vmin;
+      width: 20vmin;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .page.auth-login .head .btn .logo.discord {
+      background-image: url("https://discordapp.com/assets/192cb9459cbc0f9e73e2591b700f1857.svg"); }
+  .page.auth-login .head .btn.active, .page.auth-login .head .btn:hover, .page.auth-login .head .btn:focus, .page.auth-login .head .btn:active {
+    background-color: #677bc4; }
+
 .page.home .head .h1 {
   margin-bottom: 1px; }
 
 .page.home .head .small-text {
   margin-bottom: 1px; }
 
-.page.home .head .btn-group .btn {
+.page.home .head .btn-group .btn, .page.home .head .page.panel .panel-products .purchase-types .btn, .page.panel .panel-products .page.home .head .purchase-types .btn {
   background-color: #7289da;
   color: white;
   border: none;
   outline: none;
   box-shadow: none; }
 
-.page.home .head .btn-group .btn.active, .page.home .head .btn-group .btn:hover, .page.home .head .btn-group .btn:focus, .page.home .head .btn-group .btn:active {
+.page.home .head .btn-group .btn.active, .page.home .head .page.panel .panel-products .purchase-types .btn.active, .page.panel .panel-products .page.home .head .purchase-types .btn.active, .page.home .head .btn-group .btn:hover, .page.home .head .page.panel .panel-products .purchase-types .btn:hover, .page.panel .panel-products .page.home .head .purchase-types .btn:hover, .page.home .head .btn-group .btn:focus, .page.home .head .page.panel .panel-products .purchase-types .btn:focus, .page.panel .panel-products .page.home .head .purchase-types .btn:focus, .page.home .head .btn-group .btn:active, .page.home .head .page.panel .panel-products .purchase-types .btn:active, .page.panel .panel-products .page.home .head .purchase-types .btn:active {
   background-color: #677bc4; }
 
-.page.phone .head .btn-group .btn {
-  background-color: #7289da;
-  color: white;
-  border: none;
-  outline: none;
-  box-shadow: none; }
-
-.page.phone .head .btn-group .btn.active, .page.phone .head .btn-group .btn:hover, .page.phone .head .btn-group .btn:focus, .page.phone .head .btn-group .btn:active {
-  background-color: #677bc4; }
+.page.panel {
+  margin: 0 0 0 0; }
+  .page.panel .navbar-custom {
+    color: white;
+    background-color: transparent;
+    border-bottom: 1px solid #3e4146; }
+  .page.panel .panel-products {
+    margin: 25px 0; }
+    .page.panel .panel-products .btn {
+      background-color: #202225;
+      color: white;
+      border: none;
+      outline: none;
+      box-shadow: none; }
+    .page.panel .panel-products .btn.active, .page.panel .panel-products .btn:hover, .page.panel .panel-products .btn:focus, .page.panel .panel-products .btn:active {
+      background-color: #677bc4; }
+    .page.panel .panel-products .head span {
+      color: #c7ccd1; }
+    .page.panel .panel-products .gateways {
+      padding: 0 0 25px 0;
+      margin: 25px 0;
+      border-bottom: 1px solid #3e4146; }
+      .page.panel .panel-products .gateways .gateway {
+        margin: 0 10px; }
+        .page.panel .panel-products .gateways .gateway i {
+          height: 2vmin;
+          width: 2vmin;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          margin: 0 0.5vmin 0 0; }
+        .page.panel .panel-products .gateways .gateway i.paypal {
+          background-image: url("/assets/img/paypal.png"); }
+        .page.panel .panel-products .gateways .gateway i.bitcoin {
+          background-image: url("/assets/img/bitcoin.png"); }
+        .page.panel .panel-products .gateways .gateway i.ethereum {
+          background-image: url("/assets/img/ethereum.png"); }
+        .page.panel .panel-products .gateways .gateway i.litecoin {
+          background-image: url("/assets/img/litecoin.svg"); }
+        .page.panel .panel-products .gateways .gateway i.bitcoin-cash {
+          background-image: url("/assets/img/bitcoin-cash.svg"); }
+    .page.panel .panel-products .purchase-types {
+      padding: 0 0 25px 0;
+      margin: 25px 0; }
+    .page.panel .panel-products .products {
+      margin: 0 0 25px 0; }
+      .page.panel .panel-products .products .custom-product .amount {
+        margin: 0 0 25px 0;
+        transition: border-bottom .15s;
+        border-bottom: 2px solid #9cbebb; }
+        .page.panel .panel-products .products .custom-product .amount .icon {
+          font-size: 5vmin;
+          color: #c7ccd1; }
+        .page.panel .panel-products .products .custom-product .amount input {
+          text-align: center;
+          background-color: transparent;
+          border: none;
+          outline: none;
+          font-size: 5vmin;
+          color: white; }
+      .page.panel .panel-products .products .custom-product .amount:focus-within, .page.panel .panel-products .products .custom-product .amount:active {
+        transition: border-bottom .15s;
+        border-bottom: 2px solid #43b581; }
+      .page.panel .panel-products .products .custom-product .amount.error, .page.panel .panel-products .products .custom-product .amount.error:focus-within, .page.panel .panel-products .products .custom-product .amount.error:active {
+        transition: border-bottom .15s;
+        border-bottom: 2px solid #f04747; }
+      .page.panel .panel-products .products .custom-product .info {
+        font-size: 2vmin;
+        color: #c7ccd1; }
+      .page.panel .panel-products .products .product {
+        cursor: pointer;
+        transition: box-shadow .15s, background-color .15s;
+        box-shadow: 0 9px 30px rgba(6, 6, 7, 0.3);
+        box-sizing: border-box;
+        margin: auto;
+        margin-bottom: 15px;
+        width: 300px;
+        background-color: #202225;
+        border-radius: 5px; }
+        .page.panel .panel-products .products .product .credits {
+          width: 100%;
+          height: 105px;
+          border-radius: 5px 5px 0 0; }
+          .page.panel .panel-products .products .product .credits .total {
+            transition: color .15s;
+            color: #43b581;
+            font-style: bold;
+            font-size: 4vmin;
+            padding-top: 15px; }
+          .page.panel .panel-products .products .product .credits .extra {
+            color: #c7ccd1;
+            height: 25px;
+            width: 100%; }
+        .page.panel .panel-products .products .product .price {
+          border-radius: 0 0 5px 5px;
+          padding: 15px 0; }
+      .page.panel .panel-products .products .product.active, .page.panel .panel-products .products .product:hover, .page.panel .panel-products .products .product:focus, .page.panel .panel-products .products .product:active {
+        transition: box-shadow .15s, background-color .15s;
+        background-color: #677bc4;
+        box-shadow: 0 9px 30px rgba(6, 6, 7, 0.7); }
+        .page.panel .panel-products .products .product.active .credits .total, .page.panel .panel-products .products .product:hover .credits .total, .page.panel .panel-products .products .product:focus .credits .total, .page.panel .panel-products .products .product:active .credits .total {
+          transition: color .15s;
+          color: #75e7b3; }
+    .page.panel .panel-products .purchase {
+      background-color: #43b581;
+      font-size: 3vmin; }
+    .page.panel .panel-products .purchase.disabled, .page.panel .panel-products .purchase.disabled:hover, .page.panel .panel-products .purchase.disabled:focus, .page.panel .panel-products .purchase.disabled:active {
+      background-color: #f04747; }
+    .page.panel .panel-products .purchase:hover, .page.panel .panel-products .purchase:focus, .page.panel .panel-products .purchase:active {
+      background-color: #57c995; }
 
 .page.phone-rates .btn {
   background-color: #7289da;
@@ -2757,23 +2909,23 @@ pre {
   max-height: 340px;
   overflow-y: scroll; }
 
-.container, .page {
+.container, .page, .page.panel {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
   @media (min-width: 576px) {
-    .container, .page {
+    .container, .page, .page.panel {
       max-width: 540px; } }
   @media (min-width: 768px) {
-    .container, .page {
+    .container, .page, .page.panel {
       max-width: 720px; } }
   @media (min-width: 992px) {
-    .container, .page {
+    .container, .page, .page.panel {
       max-width: 960px; } }
   @media (min-width: 1200px) {
-    .container, .page {
+    .container, .page, .page.panel {
       max-width: 1140px; } }
 
 .container-fluid {
@@ -4518,31 +4670,59 @@ tbody.collapse.show {
   color: #6c757d;
   white-space: nowrap; }
 
-.btn-group,
+.btn-group, .page.panel .panel-products .purchase-types,
 .btn-group-vertical {
   position: relative;
   display: inline-flex;
   vertical-align: middle; }
-  .btn-group > .btn,
+  .btn-group > .btn, .page.panel .panel-products .purchase-types > .btn,
   .btn-group-vertical > .btn {
     position: relative;
     flex: 0 1 auto; }
-    .btn-group > .btn:hover,
+    .btn-group > .btn:hover, .page.panel .panel-products .purchase-types > .btn:hover,
     .btn-group-vertical > .btn:hover {
       z-index: 1; }
-    .btn-group > .btn:focus, .btn-group > .btn:active, .btn-group > .btn.active,
+    .btn-group > .btn:focus, .page.panel .panel-products .purchase-types > .btn:focus, .btn-group > .btn:active, .page.panel .panel-products .purchase-types > .btn:active, .btn-group > .btn.active, .page.panel .panel-products .purchase-types > .btn.active,
     .btn-group-vertical > .btn:focus,
     .btn-group-vertical > .btn:active,
     .btn-group-vertical > .btn.active {
       z-index: 1; }
-  .btn-group .btn + .btn,
+  .btn-group .btn + .btn, .page.panel .panel-products .purchase-types .btn + .btn,
   .btn-group .btn + .btn-group,
+  .page.panel .panel-products .purchase-types .btn + .btn-group,
+  .btn-group .page.panel .panel-products .btn + .purchase-types,
+  .page.panel .panel-products .btn-group .btn + .purchase-types,
+  .page.panel .panel-products .purchase-types .btn + .purchase-types,
   .btn-group .btn-group + .btn,
+  .page.panel .panel-products .purchase-types .btn-group + .btn,
+  .btn-group .page.panel .panel-products .purchase-types + .btn,
+  .page.panel .panel-products .btn-group .purchase-types + .btn,
+  .page.panel .panel-products .purchase-types .purchase-types + .btn,
   .btn-group .btn-group + .btn-group,
+  .page.panel .panel-products .purchase-types .btn-group + .btn-group,
+  .btn-group .page.panel .panel-products .purchase-types + .btn-group,
+  .page.panel .panel-products .btn-group .purchase-types + .btn-group,
+  .page.panel .panel-products .purchase-types .purchase-types + .btn-group,
+  .btn-group .page.panel .panel-products .btn-group + .purchase-types,
+  .page.panel .panel-products .btn-group .btn-group + .purchase-types,
+  .page.panel .panel-products .purchase-types .btn-group + .purchase-types,
+  .btn-group .page.panel .panel-products .purchase-types + .purchase-types,
+  .page.panel .panel-products .btn-group .purchase-types + .purchase-types,
+  .page.panel .panel-products .purchase-types .purchase-types + .purchase-types,
   .btn-group-vertical .btn + .btn,
   .btn-group-vertical .btn + .btn-group,
+  .btn-group-vertical .page.panel .panel-products .btn + .purchase-types,
+  .page.panel .panel-products .btn-group-vertical .btn + .purchase-types,
   .btn-group-vertical .btn-group + .btn,
-  .btn-group-vertical .btn-group + .btn-group {
+  .btn-group-vertical .page.panel .panel-products .purchase-types + .btn,
+  .page.panel .panel-products .btn-group-vertical .purchase-types + .btn,
+  .btn-group-vertical .btn-group + .btn-group,
+  .btn-group-vertical .page.panel .panel-products .purchase-types + .btn-group,
+  .page.panel .panel-products .btn-group-vertical .purchase-types + .btn-group,
+  .btn-group-vertical .page.panel .panel-products .btn-group + .purchase-types,
+  .page.panel .panel-products .btn-group-vertical .btn-group + .purchase-types,
+  .btn-group-vertical .page.panel .panel-products .purchase-types + .purchase-types,
+  .page.panel .panel-products .btn-group-vertical .purchase-types + .purchase-types {
     margin-left: -1px; }
 
 .btn-toolbar {
@@ -4552,16 +4732,22 @@ tbody.collapse.show {
   .btn-toolbar .input-group {
     width: auto; }
 
-.btn-group > .btn:first-child {
+.btn-group > .btn:first-child, .page.panel .panel-products .purchase-types > .btn:first-child {
   margin-left: 0; }
 
-.btn-group > .btn:not(:last-child):not(.dropdown-toggle),
-.btn-group > .btn-group:not(:last-child) > .btn {
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .page.panel .panel-products .purchase-types > .btn:not(:last-child):not(.dropdown-toggle),
+.btn-group > .btn-group:not(:last-child) > .btn,
+.page.panel .panel-products .purchase-types > .btn-group:not(:last-child) > .btn,
+.page.panel .panel-products .btn-group > .purchase-types:not(:last-child) > .btn,
+.page.panel .panel-products .purchase-types > .purchase-types:not(:last-child) > .btn {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0; }
 
-.btn-group > .btn:not(:first-child),
-.btn-group > .btn-group:not(:first-child) > .btn {
+.btn-group > .btn:not(:first-child), .page.panel .panel-products .purchase-types > .btn:not(:first-child),
+.btn-group > .btn-group:not(:first-child) > .btn,
+.page.panel .panel-products .purchase-types > .btn-group:not(:first-child) > .btn,
+.page.panel .panel-products .btn-group > .purchase-types:not(:first-child) > .btn,
+.page.panel .panel-products .purchase-types > .purchase-types:not(:first-child) > .btn {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0; }
 
@@ -4584,30 +4770,42 @@ tbody.collapse.show {
   align-items: flex-start;
   justify-content: center; }
   .btn-group-vertical .btn,
-  .btn-group-vertical .btn-group {
+  .btn-group-vertical .btn-group,
+  .btn-group-vertical .page.panel .panel-products .purchase-types,
+  .page.panel .panel-products .btn-group-vertical .purchase-types {
     width: 100%; }
   .btn-group-vertical > .btn + .btn,
   .btn-group-vertical > .btn + .btn-group,
+  .page.panel .panel-products .btn-group-vertical > .btn + .purchase-types,
   .btn-group-vertical > .btn-group + .btn,
-  .btn-group-vertical > .btn-group + .btn-group {
+  .page.panel .panel-products .btn-group-vertical > .purchase-types + .btn,
+  .btn-group-vertical > .btn-group + .btn-group,
+  .page.panel .panel-products .btn-group-vertical > .purchase-types + .btn-group,
+  .page.panel .panel-products .btn-group-vertical > .btn-group + .purchase-types,
+  .page.panel .panel-products .btn-group-vertical > .purchase-types + .purchase-types {
     margin-top: -1px;
     margin-left: 0; }
   .btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle),
-  .btn-group-vertical > .btn-group:not(:last-child) > .btn {
+  .btn-group-vertical > .btn-group:not(:last-child) > .btn,
+  .page.panel .panel-products .btn-group-vertical > .purchase-types:not(:last-child) > .btn {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0; }
   .btn-group-vertical > .btn:not(:first-child),
-  .btn-group-vertical > .btn-group:not(:first-child) > .btn {
+  .btn-group-vertical > .btn-group:not(:first-child) > .btn,
+  .page.panel .panel-products .btn-group-vertical > .purchase-types:not(:first-child) > .btn {
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
 
 .btn-group-toggle > .btn,
-.btn-group-toggle > .btn-group > .btn {
+.btn-group-toggle > .btn-group > .btn,
+.page.panel .panel-products .btn-group-toggle > .purchase-types > .btn {
   margin-bottom: 0; }
   .btn-group-toggle > .btn input[type="radio"],
   .btn-group-toggle > .btn input[type="checkbox"],
   .btn-group-toggle > .btn-group > .btn input[type="radio"],
-  .btn-group-toggle > .btn-group > .btn input[type="checkbox"] {
+  .page.panel .panel-products .btn-group-toggle > .purchase-types > .btn input[type="radio"],
+  .btn-group-toggle > .btn-group > .btn input[type="checkbox"],
+  .page.panel .panel-products .btn-group-toggle > .purchase-types > .btn input[type="checkbox"] {
     position: absolute;
     clip: rect(0, 0, 0, 0);
     pointer-events: none; }
@@ -6581,7 +6779,7 @@ button.bg-dark:focus {
 .d-table-cell {
   display: table-cell !important; }
 
-.d-flex, .page.home .head, .page.home .head .btn-group, .page.phone .head, .page.phone .head .btn-group, .page.phone-rates .number-lookup .number, .page.phone-rates .number-lookup .number .info, .page.phone-rates .number-lookup .rates, .page.phone-rates .rates, .page.phone-rates .rates .rate, .page.phone-rates .rates .rate .info {
+.d-flex, .account-bar, .account-bar .info, .account-bar .info .identifier, .account-bar .credits, .page.auth-login .head, .page.auth-login .head .btn, .page.home .head, .page.home .head .btn-group, .page.home .head .page.panel .panel-products .purchase-types, .page.panel .panel-products .page.home .head .purchase-types, .page.panel .panel-products, .page.panel .panel-products .head, .page.panel .panel-products .gateways, .page.panel .panel-products .gateways .gateway, .page.panel .panel-products .products, .page.panel .panel-products .products .custom-product, .page.panel .panel-products .products .custom-product .info, .page.panel .panel-products .products .product, .page.panel .panel-products .products .product .credits, .page.panel .panel-products .products .product .price, .page.phone-rates .number-lookup .number, .page.phone-rates .number-lookup .number .info, .page.phone-rates .number-lookup .rates, .page.phone-rates .rates, .page.phone-rates .rates .rate, .page.phone-rates .rates .rate .info {
   display: flex !important; }
 
 .d-inline-flex, .page.phone-rates .number-lookup {
@@ -6721,10 +6919,10 @@ button.bg-dark:focus {
 .embed-responsive-1by1::before {
   padding-top: 100%; }
 
-.flex-row, .page.home .head .btn-group, .page.phone .head .btn-group, .page.phone-rates .number-lookup .number, .page.phone-rates .rates .rate {
+.flex-row, .account-bar, .account-bar .info, .account-bar .credits, .page.home .head .btn-group, .page.home .head .page.panel .panel-products .purchase-types, .page.panel .panel-products .page.home .head .purchase-types, .page.panel .panel-products .gateways, .page.panel .panel-products .gateways .gateway, .page.panel .panel-products .products, .page.phone-rates .number-lookup .number, .page.phone-rates .rates .rate {
   flex-direction: row !important; }
 
-.flex-column, .page.home .head, .page.phone .head, .page.phone-rates .number-lookup, .page.phone-rates .number-lookup .number .info, .page.phone-rates .number-lookup .rates, .page.phone-rates .rates, .page.phone-rates .rates .rate .info {
+.flex-column, .account-bar .info .identifier, .page.auth-login .head, .page.auth-login .head .btn, .page.home .head, .page.panel .panel-products, .page.panel .panel-products .head, .page.panel .panel-products .products .custom-product, .page.panel .panel-products .products .custom-product .info, .page.panel .panel-products .products .product, .page.panel .panel-products .products .product .credits, .page.panel .panel-products .products .product .price, .page.phone-rates .number-lookup, .page.phone-rates .number-lookup .number .info, .page.phone-rates .number-lookup .rates, .page.phone-rates .rates, .page.phone-rates .rates .rate .info {
   flex-direction: column !important; }
 
 .flex-row-reverse {
@@ -6733,7 +6931,7 @@ button.bg-dark:focus {
 .flex-column-reverse {
   flex-direction: column-reverse !important; }
 
-.flex-wrap {
+.flex-wrap, .page.panel .panel-products .products {
   flex-wrap: wrap !important; }
 
 .flex-nowrap {
@@ -6763,7 +6961,7 @@ button.bg-dark:focus {
 .align-items-end {
   align-items: flex-end !important; }
 
-.align-items-center, .page.home .head, .page.phone .head, .page.phone-rates .number-lookup, .page.phone-rates .number-lookup .number, .page.phone-rates .number-lookup .rates, .page.phone-rates .rates .rate {
+.align-items-center, .account-bar, .account-bar .info, .account-bar .info .identifier, .account-bar .credits, .page.auth-login .head, .page.auth-login .head .btn, .page.home .head, .page.panel .panel-products, .page.panel .panel-products .head, .page.panel .panel-products .products .custom-product, .page.panel .panel-products .products .custom-product .info, .page.panel .panel-products .products .product, .page.panel .panel-products .products .product .credits, .page.panel .panel-products .products .product .price, .page.phone-rates .number-lookup, .page.phone-rates .number-lookup .number, .page.phone-rates .number-lookup .rates, .page.phone-rates .rates .rate {
   align-items: center !important; }
 
 .align-items-baseline {
@@ -7326,7 +7524,7 @@ button.bg-dark:focus {
 .px-1 {
   padding-left: 0.25rem !important; }
 
-.p-2, .page.home .head .small-text, .page.home .head .btn-group .btn, .page.phone .head .btn-group .btn, .page.phone-rates .number-lookup .number, .page.phone-rates .number-lookup .number .flag64, .page.phone-rates .number-lookup .number .info, .page.phone-rates .number-lookup .rates, .page.phone-rates .rates .rate, .page.phone-rates .rates .rate .flag64, .page.phone-rates .rates .rate .info, .page.phone-rates .rates .rate .price {
+.p-2, .page.auth-login .head .btn .logo, .page.home .head .small-text, .page.home .head .btn-group .btn, .page.home .head .page.panel .panel-products .purchase-types .btn, .page.panel .panel-products .page.home .head .purchase-types .btn, .page.panel .panel-products .btn, .page.phone-rates .number-lookup .number, .page.phone-rates .number-lookup .number .flag64, .page.phone-rates .number-lookup .number .info, .page.phone-rates .number-lookup .rates, .page.phone-rates .rates .rate, .page.phone-rates .rates .rate .flag64, .page.phone-rates .rates .rate .info, .page.phone-rates .rates .rate .price {
   padding: 0.5rem !important; }
 
 .pt-2,
@@ -8174,7 +8372,7 @@ button.bg-dark:focus {
 .text-right {
   text-align: right !important; }
 
-.text-center, .page.phone-rates .rates .rate .price {
+.text-center, .page.panel .panel-products .products .product .credits .total, .page.panel .panel-products .products .product .credits .extra, .page.phone-rates .rates .rate .price {
   text-align: center !important; }
 
 @media (min-width: 576px) {
@@ -8330,7 +8528,7 @@ a.text-dark:hover, a.text-dark:focus {
     size: a3; }
   body {
     min-width: 992px !important; }
-  .container, .page {
+  .container, .page, .page.panel {
     min-width: 992px !important; }
   .navbar {
     display: none; }
@@ -8371,4 +8569,7 @@ html, body, #app {
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: #212427; }
+
+span.dropdown-toggle {
+  cursor: pointer; }
 

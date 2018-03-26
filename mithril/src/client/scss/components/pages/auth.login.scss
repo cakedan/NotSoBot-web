@@ -1,0 +1,37 @@
+.page.auth-login {
+	.head {
+		@extend .d-flex;
+		@extend .flex-column;
+		@extend .align-items-center;
+
+		margin: 10vmin 0 0 0;
+
+		.btn {
+			@extend .d-flex;
+			@extend .flex-column;
+			@extend .align-items-center;
+
+			background-color: $blurple;
+			color: white;
+			border: none;
+			outline: none;
+			box-shadow: none;
+
+			.logo {
+				@extend .p-2;
+
+				display: inline-block;
+				height: 10vmin;
+				width: 20vmin;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+			.logo.discord {
+				background-image: url('https://discordapp.com/assets/192cb9459cbc0f9e73e2591b700f1857.svg');
+			}
+		}
+		.btn.active, .btn:hover, .btn:focus, .btn:active {
+			background-color: $blurpleDark;
+		}
+	}
+}
