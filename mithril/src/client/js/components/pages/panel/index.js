@@ -1,6 +1,9 @@
 module.exports = [
 	require('./panel'),
-	require('./panel.products'),
+	require('./panel.calls'),
 	require('./panel.logs'),
-	require('./panel.settings')
+	require('./panel.products'),
+	require('./panel.purchases'),
+	require('./panel.settings'),
+	require('./panel.users')
 ];

@@ -7,5 +7,6 @@ String.prototype.toTitleCase = function() {
 module.exports = {
 	Cache: require('./cache'),
 	Constants: require('./constants'),
+	Permissions: require('./permissions'),
 	Tools: require('./tools')
 };

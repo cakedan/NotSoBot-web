@@ -8,12 +8,12 @@ class CustomPage extends Page
 	constructor(app)
 	{
 		super(app, {
-			path: '/panel',
+			path: '/panel/purchases',
 			class: 'panel',
 			auth: true
 		});
-
-		this.navbar = new Navbar(this.app);
+		
+		this.navbar = this.app.pages['/panel'].page.navbar;
 	}
 
 	view()
@@ -21,7 +21,7 @@ class CustomPage extends Page
 		return [
 			m(this.navbar),
 			m('div', {class: 'head text-center'}, [
-				m('span', 'some stat stuff here')
+				m('span', 'some purchases here')
 			])
 		];
 	}

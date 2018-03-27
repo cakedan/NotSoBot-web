@@ -1,8 +1,15 @@
 const m = require('mithril');
 
+const Utils = require('../../../utils');
+
+console.log(Utils);
+
 const name = 'Panel';
 const nav = [
 	{position: 'left', path: '/panel/products', name: 'Products'},
+	{position: 'right', path: '/panel/users', name: 'Users', permissions: ['OWNER', 'SUPERADMIN']},
+	{position: 'right', path: '/panel/calls', name: 'Calls'},
+	{position: 'right', path: '/panel/purchases', name: 'Purchases'},
 	{position: 'right', path: '/panel/logs', name: 'Logs'},
 	{position: 'right', path: '/panel/settings', name: 'Settings'}
 ];
@@ -24,7 +31,14 @@ class Navbar
 			let component;
 			if (page.type === undefined || page.type === 'button') {
 				component = {
+					app: this.app,
+					page,
 					view() {
+						const user = this.app.cache.get('users.me');
+
+						if (this.page.permissions && !Utils.Permissions.checkSome(user.permissions, this.page.permissions)) {
+							return;
+						}
 						const current = m.route.get();
 		
 						const attributes = {

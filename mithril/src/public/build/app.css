@@ -2252,6 +2252,15 @@
 
 .navbar {
   background-color: #2f3136; }
+  .navbar .navbar-brand i {
+    height: 30px;
+    width: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 0.5vmin 0 0; }
+  .navbar .navbar-brand i.logo {
+    background-image: url("/assets/img/logo.png"); }
 
 .nav-link.link {
   color: #7289da !important; }
@@ -6779,7 +6788,7 @@ button.bg-dark:focus {
 .d-table-cell {
   display: table-cell !important; }
 
-.d-flex, .account-bar, .account-bar .info, .account-bar .info .identifier, .account-bar .credits, .page.auth-login .head, .page.auth-login .head .btn, .page.home .head, .page.home .head .btn-group, .page.home .head .page.panel .panel-products .purchase-types, .page.panel .panel-products .page.home .head .purchase-types, .page.panel .panel-products, .page.panel .panel-products .head, .page.panel .panel-products .gateways, .page.panel .panel-products .gateways .gateway, .page.panel .panel-products .products, .page.panel .panel-products .products .custom-product, .page.panel .panel-products .products .custom-product .info, .page.panel .panel-products .products .product, .page.panel .panel-products .products .product .credits, .page.panel .panel-products .products .product .price, .page.phone-rates .number-lookup .number, .page.phone-rates .number-lookup .number .info, .page.phone-rates .number-lookup .rates, .page.phone-rates .rates, .page.phone-rates .rates .rate, .page.phone-rates .rates .rate .info {
+.d-flex, .account-bar, .account-bar .info, .account-bar .info .identifier, .account-bar .credits, .navbar .navbar-brand, .page.auth-login .head, .page.auth-login .head .btn, .page.home .head, .page.home .head .btn-group, .page.home .head .page.panel .panel-products .purchase-types, .page.panel .panel-products .page.home .head .purchase-types, .page.panel .panel-products, .page.panel .panel-products .head, .page.panel .panel-products .gateways, .page.panel .panel-products .gateways .gateway, .page.panel .panel-products .products, .page.panel .panel-products .products .custom-product, .page.panel .panel-products .products .custom-product .info, .page.panel .panel-products .products .product, .page.panel .panel-products .products .product .credits, .page.panel .panel-products .products .product .price, .page.phone-rates .number-lookup .number, .page.phone-rates .number-lookup .number .info, .page.phone-rates .number-lookup .rates, .page.phone-rates .rates, .page.phone-rates .rates .rate, .page.phone-rates .rates .rate .info {
   display: flex !important; }
 
 .d-inline-flex, .page.phone-rates .number-lookup {
@@ -6919,7 +6928,7 @@ button.bg-dark:focus {
 .embed-responsive-1by1::before {
   padding-top: 100%; }
 
-.flex-row, .account-bar, .account-bar .info, .account-bar .credits, .page.home .head .btn-group, .page.home .head .page.panel .panel-products .purchase-types, .page.panel .panel-products .page.home .head .purchase-types, .page.panel .panel-products .gateways, .page.panel .panel-products .gateways .gateway, .page.panel .panel-products .products, .page.phone-rates .number-lookup .number, .page.phone-rates .rates .rate {
+.flex-row, .account-bar, .account-bar .info, .account-bar .credits, .navbar .navbar-brand, .page.home .head .btn-group, .page.home .head .page.panel .panel-products .purchase-types, .page.panel .panel-products .page.home .head .purchase-types, .page.panel .panel-products .gateways, .page.panel .panel-products .gateways .gateway, .page.panel .panel-products .products, .page.phone-rates .number-lookup .number, .page.phone-rates .rates .rate {
   flex-direction: row !important; }
 
 .flex-column, .account-bar .info .identifier, .page.auth-login .head, .page.auth-login .head .btn, .page.home .head, .page.panel .panel-products, .page.panel .panel-products .head, .page.panel .panel-products .products .custom-product, .page.panel .panel-products .products .custom-product .info, .page.panel .panel-products .products .product, .page.panel .panel-products .products .product .credits, .page.panel .panel-products .products .product .price, .page.phone-rates .number-lookup, .page.phone-rates .number-lookup .number .info, .page.phone-rates .number-lookup .rates, .page.phone-rates .rates, .page.phone-rates .rates .rate .info {
@@ -6961,7 +6970,7 @@ button.bg-dark:focus {
 .align-items-end {
   align-items: flex-end !important; }
 
-.align-items-center, .account-bar, .account-bar .info, .account-bar .info .identifier, .account-bar .credits, .page.auth-login .head, .page.auth-login .head .btn, .page.home .head, .page.panel .panel-products, .page.panel .panel-products .head, .page.panel .panel-products .products .custom-product, .page.panel .panel-products .products .custom-product .info, .page.panel .panel-products .products .product, .page.panel .panel-products .products .product .credits, .page.panel .panel-products .products .product .price, .page.phone-rates .number-lookup, .page.phone-rates .number-lookup .number, .page.phone-rates .number-lookup .rates, .page.phone-rates .rates .rate {
+.align-items-center, .account-bar, .account-bar .info, .account-bar .info .identifier, .account-bar .credits, .navbar .navbar-brand, .page.auth-login .head, .page.auth-login .head .btn, .page.home .head, .page.panel .panel-products, .page.panel .panel-products .head, .page.panel .panel-products .products .custom-product, .page.panel .panel-products .products .custom-product .info, .page.panel .panel-products .products .product, .page.panel .panel-products .products .product .credits, .page.panel .panel-products .products .product .price, .page.phone-rates .number-lookup, .page.phone-rates .number-lookup .number, .page.phone-rates .number-lookup .rates, .page.phone-rates .rates .rate {
   align-items: center !important; }
 
 .align-items-baseline {

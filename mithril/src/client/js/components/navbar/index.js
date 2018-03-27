@@ -8,6 +8,7 @@ const name = 'NotSoBot';
 const nav = [
 	{position: 'left', path: '/commands', name: 'Commands'},
 	{position: 'left', type: 'dropdown', name: 'Phone', icon: 'phone', paths: [
+		{path: '/phone/info', name: 'Information'},
 		{path: '/phone/rates', name: 'Rates'},
 		{path: '/phone/commands', name: 'Commands'}
 	]},
@@ -86,7 +87,7 @@ class Navbar
 			class: 'navbar navbar-expand-lg navbar-expand-md navbar-dark'
 		}, [
 			m('a[href=/]', {oncreate: m.route.link, class:'navbar-brand'}, [
-				m('img', {src: '/assets/img/logo.png', width: '30', height: '30', alt: 'cool bot logo'}),
+				m('i', {class: 'logo'}),
 				name
 			]),
 			m('ul', {class: 'navbar-nav mr-auto d-none d-md-flex d-lg-flex'}, this.buttons.left.map((c) => m(c))),

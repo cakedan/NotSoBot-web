@@ -1,6 +1,7 @@
 const m = require('mithril');
 
 const Page = require('../../page');
+const Navbar = require('./navbar');
 
 class CustomPage extends Page
 {
@@ -8,17 +9,20 @@ class CustomPage extends Page
 	{
 		super(app, {
 			path: '/panel/settings',
-			class: 'panel panel-settings',
+			class: 'panel',
 			auth: true
 		});
-
+		
 		this.navbar = this.app.pages['/panel'].page.navbar;
 	}
 
 	view()
 	{
 		return [
-			m(this.navbar)
+			m(this.navbar),
+			m('div', {class: 'head text-center'}, [
+				m('span', 'some settings here')
+			])
 		];
 	}
 }
